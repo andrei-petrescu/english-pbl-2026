@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Try a private, non-collecting demonstration of the project's student needs-and-impact survey."
+    />
+    <title>Survey demonstration — Student well-being guide</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="survey.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="index.html" aria-label="Student well-being guide, start here">
+          <span class="wordmark-title">A student well-being guide</span>
+          <span class="wordmark-note">A school project · ICHB, Romania</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Start here</a>
+          <a href="wellbeing.html">Understanding</a>
+          <a href="resources.html">Resources</a>
+          <a href="support.html">School support</a>
+          <a href="survey.html" aria-current="page">Survey</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-wrap">
+      <div class="page-layout">
+        <article class="reading-column">
+          <h1>Help shape a useful guide</h1>
+          <p class="edition-line">Needs &amp; impact</p>
+          <p class="lead">
+            This is a demonstration of the questions the project may ask. It is
+            not a live survey and it cannot produce real findings.
+          </p>
+
+          <aside class="privacy-note" aria-labelledby="privacy-heading">
+            <h2 id="privacy-heading">Your answers stay with you</h2>
+            <p>
+              This prototype does not collect, send, or save answers. When you
+              submit, the form clears and shows a confirmation. Do not enter
+              personal details.
+            </p>
+          </aside>
+
+          <form class="survey-form" data-survey-form>
+            <fieldset class="survey-question" id="needs-question" data-survey-fields disabled>
+              <legend>What would be most useful in a guide like this?</legend>
+              <p class="field-hint">Choose any that fit, or skip this question.</p>
+              <label class="choice-row">
+                <input type="checkbox" name="needs" value="school-pressure" />
+                <span>Handling school pressure</span>
+              </label>
+              <label class="choice-row">
+                <input type="checkbox" name="needs" value="friendships" />
+                <span>Friendships and belonging</span>
+              </label>
+              <label class="choice-row">
+                <input type="checkbox" name="needs" value="asking-for-help" />
+                <span>Knowing how to ask for help</span>
+              </label>
+              <label class="choice-row">
+                <input type="checkbox" name="needs" value="trusted-resources" />
+                <span>Finding trusted resources</span>
+              </label>
+            </fieldset>
+
+            <fieldset class="survey-question" id="impact-question" data-survey-fields disabled>
+              <legend>After exploring this prototype, what did you find?</legend>
+              <p class="field-hint">Choose any that fit, or skip this question.</p>
+              <label class="choice-row">
+                <input type="checkbox" name="impact" value="new-resource" />
+                <span>A resource I had not seen before</span>
+              </label>
+              <label class="choice-row">
+                <input type="checkbox" name="impact" value="school-route" />
+                <span>A school support route to explore</span>
+              </label>
+              <label class="choice-row">
+                <input type="checkbox" name="impact" value="next-step" />
+                <span>A possible next step</span>
+              </label>
+              <label class="choice-row">
+                <input type="checkbox" name="impact" value="nothing-new" />
+                <span>Nothing new yet</span>
+              </label>
+            </fieldset>
+
+            <div class="form-actions">
+              <button class="button button-primary" type="submit" data-survey-submit disabled>
+                Complete demonstration
+              </button>
+              <button class="button button-quiet" type="reset">Clear selections</button>
+            </div>
+            <p class="survey-status" data-survey-status role="status" aria-live="polite" tabindex="-1" hidden>
+              Thanks for trying the demonstration. Nothing was sent or saved.
+            </p>
+          </form>
+
+          <noscript>
+            <p class="privacy-note">
+              JavaScript is needed to try this demonstration. The questions stay
+              disabled without it, so no answers can be submitted.
+            </p>
+          </noscript>
+
+          <p class="source-note">
+            A live survey is not part of this prototype. Collecting real student
+            responses would require separate school approval and a privacy review.
+          </p>
+        </article>
+
+        <aside class="contents-rail" aria-label="Survey information">
+          <p class="rail-heading">Prototype only</p>
+          <ul>
+            <li><a href="#privacy-heading">No collection</a></li>
+            <li><a href="#needs-question">Needs question</a></li>
+            <li><a href="#impact-question">Impact question</a></li>
+          </ul>
+          <p class="rail-note">
+            This page does not measure school-wide needs or impact.
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>Student well-being guide · Educational information, not clinical care.</p>
+        <a href="support.html#urgent-help">Urgent support in Romania</a>
+      </div>
+    </footer>
+  </body>
+</html>

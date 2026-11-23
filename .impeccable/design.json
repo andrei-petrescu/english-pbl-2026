@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-23T23:10:31+02:00",
+  "title": "Design System: Student Well-being Guide",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f4eedf",
+        "tonalRamp": ["#0f0b03", "#262116", "#3f3a2e", "#5a5548", "#767164", "#948f81", "#c3bdaf", "#f4eedf"]
+      },
+      "paper-light": {
+        "role": "neutral",
+        "displayName": "Soft Paper",
+        "canonical": "#fbf8ef",
+        "tonalRamp": ["#0d0b06", "#24221b", "#3d3a33", "#58554e", "#74716a", "#928f87", "#c0beb5", "#f1eee5"]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Green-Black Ink",
+        "canonical": "#243536",
+        "tonalRamp": ["#010e0f", "#142526", "#2d3e3f", "#47595a", "#637677", "#809495", "#aec2c3", "#def3f4"]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Green Ink",
+        "canonical": "#41534e",
+        "tonalRamp": ["#020e0b", "#152521", "#2d3f3a", "#485a55", "#637671", "#81948f", "#afc3bd", "#dff4ee"]
+      },
+      "terracotta": {
+        "role": "primary",
+        "displayName": "Terracotta Mark",
+        "canonical": "#a63f2e",
+        "tonalRamp": ["#1e0100", "#450500", "#700d00", "#932d1d", "#b44c3a", "#d76b57", "#ffa18f", "#ffe9e4"]
+      },
+      "gold": {
+        "role": "secondary",
+        "displayName": "Muted Gold",
+        "canonical": "#d4a84d",
+        "tonalRamp": ["#110a00", "#2d1f00", "#4c3600", "#6e5000", "#916a00", "#b28827", "#e3b65c", "#ffecc9"]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Rule Stone",
+        "canonical": "#b8ad96",
+        "tonalRamp": ["#110a00", "#29200d", "#433926", "#5e543f", "#7b705b", "#998e78", "#c8bda5", "#f9edd5"]
+      },
+      "focus": {
+        "role": "neutral",
+        "displayName": "Focus Green",
+        "canonical": "#253f38",
+        "tonalRamp": ["#000f0a", "#0d2721", "#27413a", "#415c54", "#5d7870", "#7a968e", "#a8c5bc", "#d8f7ed"]
+      },
+      "disabled-surface": {
+        "role": "neutral",
+        "displayName": "Disabled Paper",
+        "canonical": "#e7e0d1",
+        "tonalRamp": ["#100c03", "#272217", "#403b30", "#5b564a", "#777266", "#958f83", "#c4beaf", "#f5efe0"]
+      },
+      "disabled-text": {
+        "role": "neutral",
+        "displayName": "Disabled Ink",
+        "canonical": "#53615b",
+        "tonalRamp": ["#030e09", "#17251f", "#303f39", "#4a5a53", "#66766e", "#83948c", "#b1c3ba", "#e1f4eb"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Page Display",
+        "purpose": "Newsreader page headings."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Newsreader section headings."
+      },
+      "title": {
+        "displayName": "List Title",
+        "purpose": "Smaller Newsreader titles."
+      },
+      "body": {
+        "displayName": "Reading Body",
+        "purpose": "Sans-serif body copy and controls."
+      },
+      "label": {
+        "displayName": "Editorial Label",
+        "purpose": "Tracked uppercase page and entry labels."
+      }
+    },
+    "breakpoints": [
+      {
+        "name": "tablet",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Confident action for the survey demonstration.",
+      "html": "<button class=\"ds-button-primary\" type=\"button\">Complete demonstration</button>",
+      "css": ".ds-button-primary { min-height: 2.9rem; padding: 0.65rem 1rem; border: 1px solid var(--ink); border-radius: 0; background: var(--ink); color: var(--paper-light); font: inherit; font-weight: 700; cursor: pointer; } .ds-button-primary:hover:not(:disabled) { border-color: var(--terracotta); background: var(--terracotta); } .ds-button-primary:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; } .ds-button-primary:disabled { border-color: var(--line); background: var(--disabled-surface); color: var(--disabled-text); cursor: not-allowed; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary action with an unfilled paper surface.",
+      "html": "<button class=\"ds-button-quiet\" type=\"button\">Clear selections</button>",
+      "css": ".ds-button-quiet { min-height: 2.9rem; padding: 0.65rem 1rem; border: 1px solid var(--ink); border-radius: 0; background: transparent; color: var(--ink); font: inherit; font-weight: 700; cursor: pointer; } .ds-button-quiet:hover:not(:disabled) { background: var(--paper-light); } .ds-button-quiet:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }"
+    },
+    {
+      "name": "Primary Navigation",
+      "kind": "nav",
+      "description": "Wrapping text navigation with a terracotta active-page rule.",
+      "html": "<nav class=\"ds-site-nav\" aria-label=\"Primary navigation\"><a href=\"#\" aria-current=\"page\">Start here</a><a href=\"#\">Resources</a></nav>",
+      "css": ".ds-site-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.2rem; } .ds-site-nav a { padding: 0.65rem 0 0.8rem; border-bottom: 3px solid transparent; color: var(--ink); font: 600 0.9rem/1.4 \"Segoe UI\", Arial, sans-serif; text-decoration: none; } .ds-site-nav a:hover, .ds-site-nav a[aria-current=\"page\"] { border-bottom-color: var(--terracotta); } .ds-site-nav a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }"
+    },
+    {
+      "name": "Contents Row",
+      "kind": "custom",
+      "description": "A ruled editorial link that opens a guide section.",
+      "html": "<a class=\"ds-contents-row\" href=\"#\"><span class=\"ds-list-title\">Explore trusted resources</span><span class=\"ds-list-note\">Evidence-based guides from health organizations</span><span class=\"ds-read-cue\" aria-hidden=\"true\">Read</span></a>",
+      "css": ".ds-contents-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0.35rem 1rem; align-items: baseline; padding: 1rem 0.1rem; border-bottom: 1px solid var(--line); color: var(--ink); text-decoration: none; } .ds-list-title { font: 600 1.35rem/1.2 \"Newsreader\", Georgia, serif; } .ds-list-note { color: var(--ink-soft); font: 400 0.9rem/1.5 \"Segoe UI\", Arial, sans-serif; } .ds-read-cue { grid-column: 2; grid-row: 1 / span 2; color: var(--terracotta); font: 700 0.8rem/1.4 \"Segoe UI\", Arial, sans-serif; text-transform: uppercase; } .ds-contents-row:hover .ds-list-title { color: var(--terracotta); text-decoration: underline; text-underline-offset: 0.18em; } .ds-contents-row:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }"
+    },
+    {
+      "name": "Directory Entry",
+      "kind": "custom",
+      "description": "A campus support route separated by an editorial rule.",
+      "html": "<section class=\"ds-directory-entry\"><p class=\"ds-entry-label\">ICHB · Pallady</p><h2>Counselling &amp; wellbeing</h2><p>Read the campus's published counselling information.</p></section>",
+      "css": ".ds-directory-entry { padding: 1.5rem 0 1.9rem; border-top: 1px solid var(--line); } .ds-entry-label { margin: 0 0 0.45rem; color: var(--terracotta); font: 700 0.75rem/1.4 \"Segoe UI\", Arial, sans-serif; letter-spacing: 0.085em; text-transform: uppercase; } .ds-directory-entry h2 { margin: 0 0 0.75rem; color: var(--ink); font: 600 clamp(1.65rem, 3vw, 2.1rem)/1.12 \"Newsreader\", Georgia, serif; } .ds-directory-entry p { color: var(--ink); font: 400 1rem/1.65 \"Segoe UI\", Arial, sans-serif; }"
+    },
+    {
+      "name": "Urgent Help Callout",
+      "kind": "custom",
+      "description": "A clear emergency route with one restrained accent rule.",
+      "html": "<aside class=\"ds-urgent-note\"><h2>Need urgent help?</h2><p>If you or someone else is in immediate danger, call <a href=\"tel:112\">112</a>.</p></aside>",
+      "css": ".ds-urgent-note { margin-block: 3rem; padding: 1.1rem 1.25rem; border-top: 3px solid var(--terracotta); background: var(--paper-light); } .ds-urgent-note h2 { margin: 0 0 0.75rem; color: var(--ink); font: 600 1.6rem/1.12 \"Newsreader\", Georgia, serif; } .ds-urgent-note p { color: var(--ink); font: 400 1rem/1.65 \"Segoe UI\", Arial, sans-serif; } .ds-urgent-note a { color: var(--terracotta); font-weight: 700; } .ds-urgent-note a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }"
+    },
+    {
+      "name": "Survey Question",
+      "kind": "input",
+      "description": "Native checkbox choices grouped by an accessible fieldset.",
+      "html": "<fieldset class=\"ds-survey-question\"><legend>What would be most useful in a guide like this?</legend><label class=\"ds-choice-row\"><input type=\"checkbox\"><span>Handling school pressure</span></label></fieldset>",
+      "css": ".ds-survey-question { min-width: 0; margin: 0; padding: 1.35rem 0 1.45rem; border: 0; border-top: 1px solid var(--line); } .ds-survey-question legend { max-width: 60ch; padding: 0; color: var(--ink); font: 600 1.55rem/1.25 \"Newsreader\", Georgia, serif; } .ds-choice-row { display: flex; align-items: start; gap: 0.7rem; max-width: 36rem; padding: 0.45rem 0; color: var(--ink); font: 400 1rem/1.65 \"Segoe UI\", Arial, sans-serif; } .ds-choice-row input { flex: 0 0 auto; width: 1.1rem; height: 1.1rem; margin: 0.22rem 0 0; accent-color: var(--terracotta); } .ds-choice-row input:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A Quiet Place to Start",
+    "overview": "The guide should feel like a warm, reflective note from school: personal and steady, never clinical or alarmist. Its school-paper editorial character comes from a clear reading order, generous margins, a self-hosted serif for titles, and fine rules rather than dashboard panels or decorative cards.\n\nThe visual system is for an educational project, not an official ICHB publication or a substitute for qualified support. Page labels sit beneath their headings; source links and support routes remain explicit and easy to find.",
+    "keyCharacteristics": [
+      "Warm paper and deep green-black ink.",
+      "Editorial hierarchy with a calm sans-serif reading voice.",
+      "Thin rules, square corners, and restrained terracotta emphasis.",
+      "Responsive navigation and a compact contents rail."
+    ],
+    "rules": [
+      {
+        "name": "The Paper-First Rule",
+        "body": "Keep the warm page ground dominant; use terracotta for meaningful links and editorial marks, not large decorative fields.",
+        "section": "colors"
+      },
+      {
+        "name": "The Heading-First Rule",
+        "body": "Let each page's h1 lead. Place its small running label beneath it, never as an eyebrow above it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Convey depth with paper tone and editorial rules, never with decorative shadows or glass effects.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the implemented palette values and locally hosted Newsreader face.",
+      "Do place page labels below h1 and preserve the calm reading order.",
+      "Do use semantic headings, visible keyboard focus, and source-attributed support links.",
+      "Do keep the survey non-collecting unless a separately approved implementation replaces the prototype."
+    ],
+    "donts": [
+      "Don't use shadows, gradients, rounded-card grids, or clinical dashboard patterns.",
+      "Don't place tracked uppercase labels above page headings.",
+      "Don't imply the school endorses this prototype or that general contact channels are private counselling.",
+      "Don't ask for names, contact details, or free-text disclosures in the demonstration survey."
+    ]
+  }
+}

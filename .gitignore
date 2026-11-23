@@ -1,0 +1,8 @@
+.playwright-mcp/
+.impeccable/build/
+.impeccable/questions/
+.impeccable/review/
+.env
+.env.*
+!.env.example
+node_modules/
