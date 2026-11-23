@@ -5,6 +5,7 @@ Site for Emily's english PBL project for 2026
 
 After deployment, the site will be available at
 <https://andrei-petrescu.github.io/english-pbl-2026/>.
-In the repository settings, open **Pages** and select **GitHub Actions** as the
-build and deployment source. After that, pushes to `main` deploy the site
-automatically. You can also start a deployment from the **Actions** tab.
+Before the first deployment, enable Pages in the repository settings: open
+**Pages** and select **GitHub Actions** as the build and deployment source.
+After that, pushes to `main` deploy the site automatically. You can also start
+a deployment from the **Actions** tab.
